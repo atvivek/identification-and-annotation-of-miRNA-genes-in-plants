@@ -79,6 +79,15 @@
  hairpins by miRBase version 19).
     
 	ShortStack --bamfile test1/SRR051927_trimmed.bam --locifile ath_mb21.txt --outdir test2 --genomefile Athaliana_167.fa
+  
+  After succesful run, manipulate few files as below:
+    
+    grep -p '\tY\t|#Locus' Results.txt > miRNA.txt
+    awk '{print ">" $2 "\n "$9}' miRNA.txt > miRNA.fa
+    
+    grep 'MIRNA=Y|#Locus' ShortStack_All.gff3 >  
+    
+
     
    ### Questions?
   - What output files do you see?
@@ -87,14 +96,12 @@
   - Find the raw  and normalized counts of miR156 gene? 
     
   **TEST 3** 
-  - Extract the miRNAs from the Result.txt file in fasta format
-  - Use psRNAtarget online tool to predict miRNA targets
+  - Use psRNAtarget online tool to predict miRNA targets using miRNA.fa file
   
   ### Questions?
   - How many targets do you find for miRNA156?
 	
-  **TEST 4**
-  - Make use of the annotation file in ensembl to browse along the genome tracks  
+  
     
 --------------------------------------------------------------------------------------------------------------------------------
                                                        # END OF THIS SESSION
