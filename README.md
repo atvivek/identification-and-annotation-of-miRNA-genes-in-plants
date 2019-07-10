@@ -8,8 +8,11 @@
    Install Putty software
    Open Putty and enter in Host Name (or IP address):
    	 
-	  ssh workshop@172.16.1.__ 
-      Enter password: 
+      workshop@172.16.1.__ 
+      
+   After this,  a new windows pops up.
+      
+      Enter password
    
 
    2.For Linux and Mac users
@@ -80,12 +83,12 @@
     
 	ShortStack --bamfile test1/SRR051927_trimmed.bam --locifile ath_mb21.txt --outdir test2 --genomefile Athaliana_167.fa
   
-  After succesful run, manipulate few files as below:
+  After succesful run, manipulate few files as below to generate miRNA sequence file in fasta format and annotation file respectively.  
     
     grep -p '\tY\t|#Locus' Results.txt > miRNA.txt
     awk '{print ">" $2 "\n "$9}' miRNA.txt > miRNA.fa
     
-    grep 'MIRNA=Y|#Locus' ShortStack_All.gff3 >  
+    grep 'MIRNA=Y|#Locus' ShortStack_All.gff3 > miRNA.gff3 
     
 
     
