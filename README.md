@@ -10,7 +10,7 @@
    	 
       workshop@172.16.1.__ 
       
-   After this,  a new windows pops up.
+   After this,  a new window pops up.
       
       Enter password
    
