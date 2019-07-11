@@ -85,7 +85,7 @@
   
   After succesful run, manipulate few files as below to generate miRNA sequence file in fasta format and annotation file respectively.  
     
-    grep -p '\tY\t|#Locus' Results.txt > miRNA.txt
+    grep -P '\tY\t|#Locus' Results.txt > miRNA.txt
     awk '{print ">" $2 "\n "$9}' miRNA.txt > miRNA.fa
     
     grep 'MIRNA=Y|#Locus' ShortStack_All.gff3 > miRNA.gff3 
