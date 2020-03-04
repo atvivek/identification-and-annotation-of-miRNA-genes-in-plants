@@ -103,6 +103,12 @@
   
   ### Questions?
   - How many targets do you find for miRNA156?
+  
+  ###References
+  
+  Axtell MJ. ShortStack: comprehensive annotation and quantification of small RNA genes. RNA. 2013;19(6):740–751. doi:10.1261/rna.035279.112
+  
+  
 	
   
     
